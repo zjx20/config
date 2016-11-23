@@ -3,14 +3,27 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/toPromise'
 
-@Injectable()
+export abstract class ConfigLoader {
+    abstract getApiEndpoint(): any;
+}
+
+export class ConfigStaticLoader implements ConfigLoader {
+    constructor(private apiEndpoint: string) {}
+
+    getApiEndpoint(): any {
+        return this.apiEndpoint;
+    }
+}
+
+@Injectable() 
 export class ConfigService {
     settingsRepository: any = undefined;
 
-    constructor(private http: Http) { }
+    constructor(private http: Http,
+                private loader: ConfigLoader) {}
     
-    load(endpoint: string) {
-        return this.http.get(endpoint)
+    loadSettings() {
+        return this.http.get(this.loader.getApiEndpoint())
             .map(res => res.json())
             .toPromise()
             .then(settings => this.settingsRepository = settings)
@@ -19,7 +32,7 @@ export class ConfigService {
             });
     }
 
-    get(group?: string, key?: string): any {
+    getSettings(group?: string, key?: string): any {
         if (!group) {
             return this.settingsRepository;
         }

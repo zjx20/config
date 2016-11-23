@@ -4,7 +4,7 @@ import { ConfigLoader, ConfigStaticLoader, ConfigService } from './src/config.se
 export * from './src/config.service';
 
 export function configLoaderFactory() {
-    return new ConfigStaticLoader();
+    return new ConfigStaticLoader('');
 }
 
 @NgModule()
