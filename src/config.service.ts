@@ -1,32 +1,33 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map'
-import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 export abstract class ConfigLoader {
     abstract getApiEndpoint(): any;
 }
 
 export class ConfigStaticLoader implements ConfigLoader {
-    constructor(private apiEndpoint: string) {}
+    constructor(private apiEndpoint: any = '/config.json') {}
 
     getApiEndpoint(): any {
         return this.apiEndpoint;
     }
 }
 
-@Injectable() 
+@Injectable()
 export class ConfigService {
     settingsRepository: any = undefined;
 
     constructor(private http: Http,
-                private loader: ConfigLoader) {}
-    
-    loadSettings() {
+                private loader: ConfigLoader) {
+    }
+
+    init(): any {
         return this.http.get(this.loader.getApiEndpoint())
-            .map(res => res.json())
+            .map((res: any) => res.json())
             .toPromise()
-            .then(settings => this.settingsRepository = settings)
+            .then((settings: any) => this.settingsRepository = settings)
             .catch(() => {
                 throw new Error('Error: Configuration service unreachable!');
             });

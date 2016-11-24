@@ -1,23 +1,33 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, APP_INITIALIZER } from '@angular/core';
 import { ConfigLoader, ConfigStaticLoader, ConfigService } from './src/config.service';
 
 export * from './src/config.service';
 
-export function configLoaderFactory() {
+export function configLoaderFactory(): ConfigLoader {
     return new ConfigStaticLoader('');
+}
+
+export function configInitializerFactory(config: ConfigService): any {
+    return (): void => config.init();
 }
 
 @NgModule()
 export class ConfigModule {
     static forRoot(providedLoader: any = {
-                       provide: ConfigLoader,
-                       useFactory: (configLoaderFactory)
+                       provide : ConfigLoader,
+                       useFactory : (configLoaderFactory)
                    }): ModuleWithProviders {
         return {
             ngModule : ConfigModule,
             providers : [
                 providedLoader,
-                ConfigService
+                ConfigService,
+                {
+                    provide : APP_INITIALIZER,
+                    useFactory : (configInitializerFactory),
+                    deps : [ConfigService],
+                    multi : true
+                }
             ]
         };
     }
