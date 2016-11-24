@@ -8,7 +8,7 @@ export function configLoaderFactory(): ConfigLoader {
 }
 
 export function configInitializerFactory(config: ConfigService): any {
-    return (): void => config.init();
+    return () => config.init();
 }
 
 @NgModule()

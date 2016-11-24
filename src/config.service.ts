@@ -4,14 +4,14 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 export abstract class ConfigLoader {
-    abstract getApiEndpoint(): any;
+    abstract getApiEndpoint(): string;
 }
 
 export class ConfigStaticLoader implements ConfigLoader {
     constructor(private apiEndpoint: any = '/config.json') {}
 
-    getApiEndpoint(): any {
-        return this.apiEndpoint;
+    getApiEndpoint(): string {
+        return this.apiEndpoint.toString();
     }
 }
 
