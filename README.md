@@ -11,7 +11,7 @@ You can install **`ng2-config`** using `npm`
 npm install ng2-config --save
 ```
 
-### Adding ng2-metadata to your project (SystemJS)
+### Adding ng2-config to your project (SystemJS)
 Add `map` for **`ng2-config`** in your `systemjs.config`
 ```javascript
 'ng2-config': 'node_modules/ng2-config/bundles/ng2-config.umd.min.js'
