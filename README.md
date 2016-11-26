@@ -1,5 +1,6 @@
-# ng2-config [![Build Status](https://travis-ci.org/fulls1z3/ng2-config.svg?branch=master)](https://travis-ci.org/fulls1z3/ng2-config) [![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
-[![devDependency Status](https://david-dm.org/fulls1z3/ng2-config/dev-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=devDependencies) [![peerDependency Status](https://david-dm.org/fulls1z3/ng2-config/peer-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=peerDependencies)
+# ng2-config
+[![Build Status](https://travis-ci.org/fulls1z3/ng2-config.svg?branch=master)](https://travis-ci.org/fulls1z3/ng2-config) [![devDependency Status](https://david-dm.org/fulls1z3/ng2-config/dev-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=devDependencies) [![peerDependency Status](https://david-dm.org/fulls1z3/ng2-config/peer-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=peerDependencies) [![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
+
 This repository holds the TypeScript source code and distributable bundle of **`ng2-config`**, the configuration utility for Angular2.
 
 ## Prerequisites
