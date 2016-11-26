@@ -1,4 +1,4 @@
-# ng2-config [![Build Status](https://travis-ci.org/fulls1z3/ng2-config.svg?branch=master)](https://travis-ci.org/fulls1z3/ng2-config) [![Dependency Status](https://david-dm.org/fulls1z3/ng2-config.svg)](https://david-dm.org/fulls1z3/ng2-config) [![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
+# ng2-config [![Build Status](https://travis-ci.org/fulls1z3/ng2-config.svg?branch=master)](https://travis-ci.org/fulls1z3/ng2-config) [![devDependency Status](https://david-dm.org/fulls1z3/ng2-config/dev-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=devDependencies) [![peerDependency Status](https://david-dm.org/fulls1z3/ng2-config/peer-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=peerDependencies) [![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
 This repository holds the TypeScript source code and distributable bundle of **`ng2-config`**, the configuration utility for Angular2.
 
 ## Prerequisites
@@ -113,6 +113,6 @@ export class AnyClass {
 ## Licence
 The MIT License (MIT)
 
-Copyright © 2016 [Burak Tasci](http://www.buraktasci.com)
+Copyright (c) 2016 [Burak Tasci](http://www.buraktasci.com)
 
 [AoT compilation]: https://angular.io/docs/ts/latest/cookbook/aot-compiler.html
