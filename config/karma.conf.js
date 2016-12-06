@@ -25,7 +25,7 @@ module.exports = function(config) {
          */
         files: [
             {
-                pattern: './spec-bundle.js',
+                pattern: './config/spec-bundle.js',
                 watched: false
             }
         ],
@@ -35,7 +35,7 @@ module.exports = function(config) {
          * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
          */
         preprocessors: {
-            './spec-bundle.js': ['coverage', 'webpack', 'sourcemap']
+            './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap']
         },
 
         // Webpack config at ./webpack.test.js

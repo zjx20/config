@@ -18,6 +18,8 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 after_failure:
   - cat /home/travis/build/fulls1z3/ng2-config/npm-debug.log
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email: true
