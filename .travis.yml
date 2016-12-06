@@ -11,6 +11,7 @@ before_install:
   - npm prune
   - export CHROME_BIN=chromium-browser
   - "npm i -g npm@^3"
+  - "npm config set -g production false"
 # install:
 #   - npm install
 before_script:
