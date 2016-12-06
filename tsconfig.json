@@ -18,9 +18,7 @@
     "./src/config.service.ts"
   ],
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "**/*.e2e.ts"
+    "node_modules"
   ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,

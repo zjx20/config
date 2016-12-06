@@ -1,5 +1,8 @@
+// angular
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+
+// libs
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
@@ -20,8 +23,7 @@ export class ConfigService {
     settingsRepository: any = undefined;
 
     constructor(private http: Http,
-                private loader: ConfigLoader) {
-    }
+                public loader: ConfigLoader) {}
 
     init(): any {
         return this.http.get(this.loader.getApiEndpoint())
@@ -34,21 +36,17 @@ export class ConfigService {
     }
 
     getSettings(group?: string, key?: string): any {
-        if (!group) {
+        if (!group)
             return this.settingsRepository;
-        }
 
-        if (!this.settingsRepository[group]) {
+        if (!this.settingsRepository[group])
             throw new Error(`Error: No setting found with the specified group [${group}]!`);
-        }
 
-        if (!key) {
+        if (!key)
             return this.settingsRepository[group];
-        }
 
-        if (!this.settingsRepository[group][key]) {
+        if (!this.settingsRepository[group][key])
             throw new Error(`Error: No setting found with the specified group/key [${group}/${key}]!`);
-        }
 
         return this.settingsRepository[group][key];
     }
