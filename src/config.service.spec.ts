@@ -15,7 +15,7 @@ let mockSettings = {
     'i18n': {
         'locale': 'en'
     }
-}
+};
 
 // test module configuration for each test
 const testModuleConfig = (options?: any) => {
@@ -52,7 +52,7 @@ describe('ConfigLoader',
             connection = undefined;
         });
 
-        loaderTests();
+        testLoader();
     });
 
 describe('ConfigService',
@@ -70,10 +70,10 @@ describe('ConfigService',
             config = undefined;
         });
 
-        serviceTests();
+        testService();
     });
 
-function loaderTests(): void {
+function testLoader(): void {
     function run(instance: any) {
         injector = getTestBed();
         backend = injector.get(XHRBackend);
@@ -132,7 +132,7 @@ function loaderTests(): void {
     });
 }
 
-function serviceTests(): void {
+function testService(): void {
     it('is defined',
         () => {
             expect(ConfigService).toBeDefined();

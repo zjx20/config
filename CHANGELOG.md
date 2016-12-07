@@ -1,6 +1,17 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2016-12-07
+### Added
+- Added unit tests
+- Added test config
+
+### Changed
+- Updated CI
+- Updated gulp tasks
+- Updated webpack config
+- Updated dependencies
+
 ## [1.0.5] - 2016-11-26
 ### Changed
 - Updated webpack config
@@ -26,5 +37,6 @@ All notable changes to this project will be documented in this file.
 ## 0.0.1 - 2016-11-23
 - pre-release
 
-[1.0.5]: https://github.com/fulls1z3/ng2-metadata/compare/1.0.5...1.0.5
+[1.1.0]: https://github.com/fulls1z3/ng2-metadata/compare/1.0.5...1.1.0
+[1.0.5]: https://github.com/fulls1z3/ng2-metadata/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/fulls1z3/ng2-metadata/compare/1.0.1...1.0.4

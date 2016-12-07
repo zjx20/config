@@ -9,6 +9,7 @@
 .gitignore
 .npmignore
 .travis.yml
+appveyor.yml
 gulpfile.js
 karma.conf.js
 ng2-config.csproj
