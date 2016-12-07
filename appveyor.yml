@@ -1,6 +1,7 @@
 # Test against this version of Node.js
 environment:
-  - nodejs_version: "6"
+  matrix:
+    - nodejs_version: "6"
 cache:
   # local npm modules
   - node_modules -> package.json
