@@ -1,7 +1,7 @@
 ﻿/**
  * Dependencies
  */
-const webpackConfig = require('./webpack.test.js')({ env: 'test' });
+const webpackConfig = require('./webpack.test.js');
 
 module.exports = function(config) {
     const configuration = {

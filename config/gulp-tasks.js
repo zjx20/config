@@ -151,7 +151,7 @@ var tests = {
         const server = require('karma').Server;
 
         new server({
-                configFile: $$.root('./config/karma.conf.js'),
+                configFile: $$.root('./karma.conf.js'),
                 singleRun: true
             },
             function() {
