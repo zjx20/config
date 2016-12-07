@@ -1,5 +1,4 @@
-# ng2-config
-[![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
+# ng2-config [![npm version](https://badge.fury.io/js/ng2-config.svg)](http://badge.fury.io/js/ng2-config) [![npm downloads](https://img.shields.io/npm/dm/ng2-config.svg)](https://npmjs.org/ng2-config)
 
 [![Linux build](https://travis-ci.org/fulls1z3/ng2-config.svg?branch=master)](https://travis-ci.org/fulls1z3/ng2-config) [![Windows build](https://ci.appveyor.com/api/projects/status/github/fulls1z3/ng2-config?branch=master&svg=true)](https://ci.appveyor.com/api/projects/status/github/fulls1z3/ng2-config?branch=master&svg=true) [![coverage](https://codecov.io/github/fulls1z3/ng2-config/coverage.svg?branch=master)](https://codecov.io/github/fulls1z3/ng2-config/coverage.svg?branch=master) [![peerDependency Status](https://david-dm.org/fulls1z3/ng2-config/peer-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=peerDependencies) [![devDependency Status](https://david-dm.org/fulls1z3/ng2-config/dev-status.svg)](https://david-dm.org/fulls1z3/ng2-config#info=devDependencies)
 
