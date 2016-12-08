@@ -20,7 +20,7 @@ export class ConfigStaticLoader implements ConfigLoader {
 
 @Injectable()
 export class ConfigService {
-    settingsRepository: any = undefined;
+    private settingsRepository: any = undefined;
 
     constructor(private http: Http,
                 public loader: ConfigLoader) {}
@@ -31,7 +31,7 @@ export class ConfigService {
             .toPromise()
             .then((settings: any) => this.settingsRepository = settings)
             .catch(() => {
-                throw new Error('Error: Configuration service unreachable!');
+                throw new Error('Error: apiEndpoint unreachable!');
             });
     }
 
