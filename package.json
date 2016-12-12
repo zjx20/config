@@ -1,6 +1,6 @@
 {
   "name": "ng2-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Configuration utility for Angular2",
   "scripts": {
     "test": "karma start"

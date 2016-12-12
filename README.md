@@ -32,7 +32,7 @@ You can customize this behavior (and ofc other settings) by configuring a custom
 import { ConfigModule, ConfigLoader, ConfigStaticLoader } from 'ng2-config';
 ...
 
-export function createConfigLoader() {
+export function configFactory() {
     return new ConfigStaticLoader('/config.json'); // PATH || API ENDPOINT
 }
 
@@ -44,7 +44,7 @@ export function createConfigLoader() {
   imports: [
     ConfigModule.forRoot({
       provide: ConfigLoader,
-      useFactory: (createConfigLoader)
+      useFactory: (configFactory)
     }),
     ...
   ],
