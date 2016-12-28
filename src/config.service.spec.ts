@@ -2,7 +2,7 @@
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 import { Injector } from '@angular/core';
 import { async, getTestBed, inject, TestBed } from '@angular/core/testing';
-import { Http, BaseRequestOptions, HttpModule, Response, ResponseOptions, XHRBackend } from '@angular/http';
+import { Http, BaseRequestOptions, HttpModule, Response, ResponseOptions } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 
 // module
