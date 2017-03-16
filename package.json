@@ -4,7 +4,7 @@
   "description": "Configuration utility for Angular",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nglibs/config.git"
+    "url": "https://github.com/zjx20/config.git"
   },
   "keywords": [
     "app initializer",
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nglibs/config/issues"
+    "url": "https://github.com/zjx20/config/issues"
   },
-  "homepage": "https://github.com/nglibs/config#readme",
+  "homepage": "https://github.com/zjx20/config#readme",
   "scripts": {
     "test": "karma start"
   },
